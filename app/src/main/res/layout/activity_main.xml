@@ -27,6 +27,7 @@
             android:addTextChangedListener="@{handler.textWatcher}" />
 
         <Button
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/main_input"
@@ -35,5 +36,24 @@
             android:onClick="@{handler.onClick}"
             android:text="Start" />
 
+        <RadioGroup
+            android:id="@+id/orientation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Horizontal" />
+
+            <RadioButton
+                android:id="@+id/vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vertical" />
+        </RadioGroup>
     </RelativeLayout>
 </layout>
